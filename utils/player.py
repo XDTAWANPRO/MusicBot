@@ -23,10 +23,10 @@ FFMPEG_OPTS = {
 _YDL_COMMON = {
     "quiet": True, "no_warnings": True, "source_address": "0.0.0.0","cookiefile": "cookies.txt",
 }
-YDL_SEARCH   = {**_YDL_COMMON, "format": "bestaudio/best", "noplaylist": True}
+YDL_SEARCH = {**_YDL_COMMON, "format": "bestaudio/best", "noplaylist": True, "format_sort": ["abr", "asr"]}
 YDL_PLAYLIST = {**_YDL_COMMON, "format": "bestaudio/best", "noplaylist": False,
                 "playlistend": 50, "extract_flat": "in_playlist"}
-YDL_STREAM   = {**_YDL_COMMON, "format": "bestaudio[ext=webm]/bestaudio/best", "noplaylist": True}
+YDL_STREAM = {**_YDL_COMMON, "format": "bestaudio/best", "noplaylist": True}
 
 
 # ── Song ──────────────────────────────────────────────────────────────────────
