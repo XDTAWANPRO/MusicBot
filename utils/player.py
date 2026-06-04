@@ -21,7 +21,7 @@ FFMPEG_OPTS = {
 }
 
 _YDL_COMMON = {
-    "quiet": True, "no_warnings": True, "source_address": "0.0.0.0",
+    "quiet": True, "no_warnings": True, "source_address": "0.0.0.0","cookiefile": "cookies.txt",
 }
 YDL_SEARCH   = {**_YDL_COMMON, "format": "bestaudio/best", "noplaylist": True}
 YDL_PLAYLIST = {**_YDL_COMMON, "format": "bestaudio/best", "noplaylist": False,
